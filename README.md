@@ -26,13 +26,45 @@ A simple yet effective Bash script to benchmark disk read/write performance usin
 ```bash
 ./ReadWriteBenchmark.sh fio_output.txt
 ```
+---
 
-- If `fio_output.txt` does not exist, the script will:
-  1. Run the FIO benchmark
-  2. Show a bouncing animation while it runs
-  3. Re-run itself to parse and display the results
+### 🛠️ Initial Setup
+Perfect — here’s a step-by-step guide to test your `ReadWriteBenchmark.sh` script from scratch:
+---
+
+#### 🧰 1. **Install Prerequisites**
+Make sure your system has Git and FIO, else skip command
+```bash
+sudo apt update
+sudo apt install git fio -y
+```
+---
+
+#### 📦 2. **Clone Your GitHub Repository**
+```bash
+git clone https://github.com/panda-epic/ReadWriteBenchmarkByFio.git
+cd ./ReadWriteBenchmarkByFio
+```
 
 ---
+#### 🔐 3. **Make the Script Executable**
+```bash
+chmod +x ReadWriteBenchmark.sh
+```
+---
+
+#### 🚀 4. **Run the Script**
+```bash
+./ReadWriteBenchmark.sh fio_output.txt
+```
+
+- If `fio_output.txt` doesn’t exist, the script will:
+  - Run the FIO benchmark
+  - Re-run itself to parse and display the results
+  - Clean up the output file
+---
+
+
 
 ### 📊 Sample Output
 ```
