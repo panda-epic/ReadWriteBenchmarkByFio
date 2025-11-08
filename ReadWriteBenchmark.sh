@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Usage: ./ReadWriteBenchmark.sh fio_output.txt
+# Usage: ./ReadWriteBenchmark.sh fio_output.log
 
 INPUT_FILE="$1"
 
@@ -11,7 +11,7 @@ if [[ ! -f "$INPUT_FILE" ]]; then
       echo "Error: Fio is not installed. Run 'sudo apt install fio' to install it."
       exit 1
     else
-        fio --name=randrw --rw=randrw --size=512M --direct=1 --bs=4k --numjobs=4 --time_based --runtime=60 --group_reporting >> fio_output.txt &
+        fio --name=randrw --rw=randrw --size=512M --direct=1 --bs=4k --numjobs=4 --time_based --runtime=60 --group_reporting >> fio_output.log &
         fio_pid=$!
         # Bounce animation
         frames=(    " o             "
@@ -46,7 +46,7 @@ if [[ ! -f "$INPUT_FILE" ]]; then
             sleep 0.1
             done
         done
-        echo -e "\rFIO Benchmark Complete! "
+        echo -e "\rFIO Benchmark Complete!"
     exec "$0" "$INPUT_FILE"
     fi
 fi
@@ -70,4 +70,4 @@ grep -E '^\s+(read|write): IOPS=' "$INPUT_FILE" | while read -r line; do
 done
 
 # Clean-up previous test file.
-rm ./fio_output.txt
+rm ./fio_output.log
