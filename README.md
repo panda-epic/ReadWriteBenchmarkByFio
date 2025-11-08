@@ -54,6 +54,11 @@ cd ./ReadWriteBenchmarkByFio
 ```bash
 chmod +x ReadWriteBenchmark.sh
 ```
+
+whole command is based on; 
+```bash
+fio --name=randrw --rw=randrw --size=512M --direct=1 --bs=4k --numjobs=4 --time_based --runtime=60 --group_reporting >> fio_output.log
+```
 ---
 
 #### 🚀 4. **Run the Script**
