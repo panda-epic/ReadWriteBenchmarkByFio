@@ -1,15 +1,16 @@
 # ReadWriteBenchmarkByFio
 
 ## 📘 ReadWriteBenchmark.sh
-A simple yet effective Bash script to benchmark disk read/write performance using [FIO](https://github.com/axboe/fio), with automatic execution, animated progress feedback, and bandwidth conversion to MB/s.
+A simple yet effective Bash script to benchmark disk read/write performance using [FIO](https://github.com/axboe/fio), with automated, one command execution and bandwidth conversion to MB/s.
 
 ### 🚀 Features
 - Automatically runs a 60-second FIO test if no input file is provided
 - Parses and converts read/write bandwidth from KiB/s and kB/s to MB/s
 - Cleans up temporary files after execution
 - Minimal dependencies and easy to run
-
 ---
+
+
 
 ### 🛠 Prerequisites
 - Linux or Unix-like environment
@@ -18,14 +19,17 @@ A simple yet effective Bash script to benchmark disk read/write performance usin
   ```bash
   sudo apt install fio
   ```
-
 ---
+
+
 
 ### 📦 Usage
 ```bash
 ./ReadWriteBenchmark.sh fio_output.txt
 ```
 ---
+
+
 
 ### 🛠️ Initial Setup
 Perfect — here’s a step-by-step guide to test your `ReadWriteBenchmark.sh` script from scratch:
@@ -76,8 +80,9 @@ write:
   Binary (KiB/s): 433 → 0.423 MB/s
   Decimal (kB/s): 444 → 0.444 MB/s
 ```
-
 ---
+
+
 
 ### 🧹 Cleanup
 The script automatically deletes `fio_output.txt` after parsing to keep your workspace clean.
@@ -93,12 +98,14 @@ sudo apt remove fio
 ```
 ---
 
+
+
 ### ❤️ Contributing
 Feel free to fork, tweak, or extend this script. Whether you're adding new metrics, improving animations, or adapting it for other platforms — sharing is loving!
-
 ---
+
+
 
 ### 📄 License
 This project is open-source and free to use.
-
 ---
