@@ -58,7 +58,7 @@ chmod +x ReadWriteBenchmark.sh
 
 #### 🚀 4. **Run the Script**
 ```bash
-./ReadWriteBenchmark.sh fio_output.txt
+./ReadWriteBenchmark.sh fio_output.log
 ```
 
 - If `fio_output.txt` doesn’t exist, the script will:
