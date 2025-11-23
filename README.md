@@ -20,7 +20,7 @@ A simple yet effective Bash script to benchmark disk read/write performance usin
   sudo apt install fio
   ```
 ---
-- Termu (Android app)
+- Termux (Android app)
   You can install it via:
   ```bash
   pkg install root-repo && fio
