@@ -20,12 +20,18 @@ A simple yet effective Bash script to benchmark disk read/write performance usin
   sudo apt install fio
   ```
 ---
+- Termu (Android app)
+  You can install it via:
+  ```bash
+  pkg install root-repo && fio
+  ```
+---
 
 
 
 ### 📦 Usage
 ```bash
-./ReadWriteBenchmark.sh fio_output.txt
+./ReadWriteBenchmark.sh ./fio_output.txt
 ```
 ---
 
@@ -63,7 +69,7 @@ fio --name=randrw --rw=randrw --size=512M --direct=1 --bs=4k --numjobs=4 --time_
 
 #### 🚀 4. **Run the Script**
 ```bash
-./ReadWriteBenchmark.sh fio_output.log
+./ReadWriteBenchmark.sh ./fio_output.log
 ```
 
 - If `fio_output.txt` doesn’t exist, the script will:
