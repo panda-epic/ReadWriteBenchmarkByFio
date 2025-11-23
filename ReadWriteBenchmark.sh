@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Usage: ./ReadWriteBenchmark.sh fio_output.log
+# Usage: './ReadWriteBenchmark.sh ./fio_output.log'
 
 INPUT_FILE="$1"
 
